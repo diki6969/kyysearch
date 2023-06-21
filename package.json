@@ -1,21 +1,21 @@
 {
-  "name": "yt-search",
+  "name": "kyysearch",
   "version": "2.10.4",
   "description": "search youtube",
-  "main": "dist/yt-search.js",
+  "main": "dist/kyysearch.js",
   "bin": {
-    "yt-search": "bin/cli.js",
-    "yt-search-video": "bin/mpv_video.sh",
-    "yt-search-audio": "bin/mpv_audio.sh"
+    "kyysearch": "bin/cli.js",
+    "kyysearch-video": "bin/mpv_video.sh",
+    "kyysearch-audio": "bin/mpv_audio.sh"
   },
   "files": [
     "bin/**.*",
-    "dist/yt-search.js"
+    "dist/kyysearch.js"
   ],
   "scripts": {
     "debug": "debug=1 node src/index.js --silent",
     "build": "npm run build:src",
-    "build:src": "browserify --node --no-bundle-external --standalone ytSearch -t [ babelify --presets [ @babel/preset-env ] ] src/index.js -o dist/yt-search.js 2>&1 | wooster",
+    "build:src": "browserify --node --no-bundle-external --standalone ytSearch -t [ babelify --presets [ @babel/preset-env ] ] src/index.js -o dist/kyysearch.js 2>&1 | wooster",
     "prepublishOnly": "npm test",
     "test:production": "node test/test.js | faucet",
     "test:util": "node test/test-get-scripts.js",
@@ -27,10 +27,10 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/talmobi/yt-search"
+    "url": "https://github.com/talmobi/kyysearch"
   },
   "bugs": {
-    "url": "https://github.com/talmobi/yt-search/issues",
+    "url": "https://github.com/talmobi/kyysearch/issues",
     "email": "talmo.christian@gmail.com"
   },
   "dependencies": {
